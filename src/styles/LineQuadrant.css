@@ -1,0 +1,9 @@
+.linequadrant-component {
+  width: 40px;
+}
+.linequadrant-component .center-part{
+  display: flex;
+}
+.linequadrant-component .center-part :first-child{
+  margin-right: 30px;
+}
