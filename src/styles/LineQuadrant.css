@@ -3,6 +3,8 @@
 }
 .linequadrant-component .center-part{
   display: flex;
+  margin-top: -5px;
+  margin-bottom: -5px;
 }
 .linequadrant-component .center-part :first-child{
   margin-right: 30px;

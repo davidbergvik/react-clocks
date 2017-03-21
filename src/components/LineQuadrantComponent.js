@@ -8,16 +8,15 @@ require('styles//LineQuadrant.css');
 let LineQuadrantComponent = (props) => (
   <div className="linequadrant-component">
     <div className="top-part">
-      <Line direction="-"/>
+      <Line direction="-" visible={props.lineVisibility.top}/>
     </div>
     <div className="center-part">
-      <Line direction="|"/>
-      <Line direction="|"/>
+      <Line direction="|" visible={props.lineVisibility.left}/>
+      <Line direction="|" visible={props.lineVisibility.right}/>
     </div>
     <div className="bottom-part">
-    <Line direction="-"/>
+      <Line direction="-" visible={props.lineVisibility.bottom}/>
     </div>
-
   </div>
 );
 
