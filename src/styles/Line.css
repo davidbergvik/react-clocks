@@ -10,5 +10,5 @@
   height: 50px;
 }
 .line-component.hide{
-  visibility: hidden;
+  background-color: transparent;
 }

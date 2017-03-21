@@ -10,7 +10,7 @@ let LineComponent = (props) => (
   let currentDirectionClass = dirClasses[dirChars.indexOf(direction)];*/
 
   <div className={'line-component ' +
-    (props.visible ? '':'hide') +
+    (props.visible ? '':'hide ') +
     ((props.direction == '|') ? 'vertical':'') +
     ((props.direction == '-') ? 'horizontal':'') +
     ((props.direction == '!/') ? 'diagonal-top-bottom':'') +

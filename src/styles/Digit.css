@@ -1,6 +1,8 @@
 .digit-component {
 height: 100px;
+display: inline-block;
+padding:20px;
 }
-.digit-component:last-child .quad{
+.digit-component .quad:last-child{
   margin-top: -5px;
 }
