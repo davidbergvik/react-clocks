@@ -1,3 +1,46 @@
 .circularclock-component {
-  border: 1px dashed #f00;
+  display: inline-flex;
+  width: 230px;
+  height: 230px;
+  position: relative;
+}
+.circularclock-component .sec-indicator,
+.circularclock-component .min-indicator{
+  width: 10px;
+  position: absolute;
+  height: 200px;
+  padding-top: 10px;
+  z-index: 5;
+  left: 110px;
+  top:10px;
+}
+.circularclock-component .hour-indicator{
+  width: 10px;
+  position: absolute;
+  height: 150px;
+  padding-top: 60px;
+  z-index: 4;
+  left: 110px;
+  top:10px;
+}
+.circularclock-component .clock-background{
+  left:5px;
+  top:5px;
+  z-index: 2;
+  position:absolute;
+  height: 220px;
+  width: 220px;
+  border-radius: 110px;
+  background-color: black;
+}
+.circularclock-component .clock-edge{
+  position:absolute;
+  height: 230px;
+  width: 230px;
+  border-radius: 115px;
+  background-color: white;
+  z-index: 1;
+}
+.circularclock-component .line-component{
+
 }
