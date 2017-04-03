@@ -1,0 +1,7 @@
+.checkbox-component {
+
+}
+.checkbox-component label,.checkbox-component input{
+  width: 25px;
+  height: 25px;
+}

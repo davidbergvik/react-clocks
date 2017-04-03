@@ -6,27 +6,7 @@ import Line from './LineComponent';
 require('styles//CircularClock.css');
 
 class CircularClockComponent extends React.Component {
-  constructor(props) {
-   super(props);
-   this.state = {date: new Date()};
- }
- componentDidMount() {
-   this.timerID = setInterval(
-     () => this.tick(),
-     1000
-   );
- }
 
- componentWillUnmount() {
-   clearInterval(this.timerID);
- }
-
- tick() {
-   this.setState({
-     date: new Date()
-   });
-
- }
  calcLineAngleStyle(time,maxTime){
    let angle =  (360 * (time/maxTime));
    let css = {
@@ -35,7 +15,7 @@ class CircularClockComponent extends React.Component {
    return css;
  }
   render() {
-    const currentDate = this.state.date;
+    const currentDate = this.props.time;
     const seconds = currentDate.getSeconds();
     const minutes = currentDate.getMinutes();
     const hours = currentDate.getHours();

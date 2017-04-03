@@ -6,3 +6,6 @@ padding:20px;
 .digit-component .quad:last-child{
   margin-top: -5px;
 }
+.digit-component:nth-child(2n){
+  padding-left: 0;
+}

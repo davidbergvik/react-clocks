@@ -1,0 +1,33 @@
+.alarm-component{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 10px;
+  border-left: 4px solid grey;
+  font-size: 1rem;
+}
+.alarm-component .number-of-days{
+  font-size: 3rem;
+}
+.alarm-component.time-is-up .clock-component.blink-active{
+  visibility: hidden;
+}
+.alarm-component.armed.time-is-up{
+  border-left-color: red;
+}
+.alarm-component.armed {
+  border-left-color: lightgreen;
+}
+.alarm-component>*{
+  flex-grow: 1;
+  flex-basis: 0;
+}
+/*
+.alarm-component p{
+  align-self: flex-start;
+}
+.alarm-component .armed-toggle{
+  align-self: flex-end;
+}
+*/

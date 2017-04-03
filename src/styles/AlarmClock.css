@@ -1,0 +1,8 @@
+.alarmclock-component{
+  display: flex;
+  flex-direction: column;
+}
+.alarmclock-component>*{
+  flex-grow: 1;
+  flex-basis: 
+}
